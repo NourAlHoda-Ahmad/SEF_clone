@@ -16,20 +16,6 @@ hamburger_close_button.onclick = function(){
 }   
 
 
-// function showContent(evt, program_name) {
-//     let i, program, tablinks;
-//     program = document.getElementsByClassName("program-content");
-//     for (i = 0; i < program.length; i++) {
-//       program[i].style.display = "none";
-   
-//     }
-//     tablinks = document.getElementsByClassName("tablink");
-//     for (i = 0; i < program.length; i++) {
-//       tablinks[i].className = tablinks[i].className.replace(" tablink-active", "");
-//     }
-//     document.getElementById(program_name).style.display = "block";
-//     evt.currentTarget.className += " tablink-active";
-//   }
 
 function showContent(evt, program_name) {
     let i, program, tablinks;
