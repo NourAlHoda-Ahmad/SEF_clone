@@ -408,10 +408,9 @@ body {
 
 /* Hero Section end */
 
+
+
 /* Hello World Section start */
-
-
-
 .container {
     display: flex;
     margin: 70px 100px;
@@ -485,7 +484,7 @@ body {
     /* align-items: center; */
     overflow-x: hidden;
     margin-bottom: 100px;
-    position: absolute;
+    /* position: relative; */
 
 
 }
@@ -506,6 +505,78 @@ body {
 }
 
 /* Hello World Section end */
+
+
+.milestones{
+    padding: 20px 0px;
+    width: 100vw;
+    /* height: 100vh; */
+    background-color: white;
+}
+
+.container-content{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.infographic-card
+{
+    background-color: var(--light-grey);
+    padding: 50px;
+    margin: 5px;
+    border-radius: 10px;
+
+}
+.infographic-left{
+    width: 30vw;
+    align-items: flex-start;
+    
+    
+}
+
+.infographic-right{
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.milestone-title-number{
+    font-size: 76px;
+    font-weight: 700;
+}
+
+.milestone-title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.milestone-description{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries */
 @media only screen and (max-width: 800px) {
