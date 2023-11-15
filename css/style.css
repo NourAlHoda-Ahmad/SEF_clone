@@ -694,7 +694,7 @@ section {
 
 
 .btn-date-course,.btn-more{
-    background-color: black;
+    background-color:#363738;
     padding: 15px 20px;
     margin: 5px;
     cursor: pointer;
@@ -706,6 +706,68 @@ section {
 
 }
 
+
+
+
+/* Hire talents */
+.hire-talents{
+    background-color: #363738;
+    color: white;
+}
+
+.hire-talents .container-content{
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+    flex-direction: column;
+    
+}
+
+/* .container-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+
+} */
+
+
+.hire-talents .btn-more{
+    color: white;
+    text-align: end;
+    margin-top: 20px;
+}
+
+
+
+.hire-talents  .container-content .recruitment-subtitle{
+    background-color: #363738;
+    margin: 20px 0px;
+    padding: 20px;
+    width: fit-content;
+}
+
+.recruitment-list{
+    margin: 20px;
+}
+
+
+.container-content.hr-content{
+    color: white;
+    font-size: 16px;
+    align-items: flex-end;
+}
+
+.hr-hire{
+   display: flex;
+    }
+
+.hr-hire p{
+    width: max-content;
+}
+
+.hr-hire img{
+height: 50px;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 800px) {
