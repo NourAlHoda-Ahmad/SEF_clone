@@ -40,6 +40,10 @@ body {
     font-size: 16px;
 }
 
+section {
+    padding: 20px 0px;
+    width: 100vw;
+}
 
 .btn {
     padding: 15px;
@@ -242,29 +246,32 @@ body {
 
 }
 
-.box-hr{
+.box-hr {
     background-color: #31b7f0;
     cursor: pointer;
     display: flex;
 }
-.hr-box-logo{
+
+.hr-box-logo {
     width: 152px;
     height: 120px;
     padding: 20px;
 }
 
-.hr-box-description{
+.hr-box-description {
     padding: 20px 0px;
     color: white;
     font-weight: 700;
     font-size: 18px;
 
 }
-.hr-box-description-down{
+
+.hr-box-description-down {
     font-size: 12px;
     font-weight: 300;
     padding-top: 10px;
 }
+
 .hero-left,
 .hero-right {
     width: 50vw;
@@ -456,7 +463,8 @@ body {
 
 .circle-black,
 .circle-grey,
-.circle-main {
+.circle-main,
+.circle-white {
     height: 25px;
     width: 25px;
     background-color: black;
@@ -475,6 +483,11 @@ body {
 
 }
 
+.circle-white {
+    background-color: white;
+    /* margin-right: 0px; */
+
+}
 
 .hello-world {
     width: 100vw;
@@ -506,56 +519,137 @@ body {
 
 /* Hello World Section end */
 
-
-.milestones{
-    padding: 20px 0px;
-    width: 100vw;
+/* MileStone Section start */
+.milestones {
+    /* padding: 20px 0px;
+    width: 100vw; */
     /* height: 100vh; */
     background-color: white;
 }
 
-.container-content{
+.container-content {
     display: flex;
     flex-wrap: wrap;
+    width: 100vw;
 
 }
 
-.infographic-card
-{
+.infographic-card {
     background-color: var(--light-grey);
     padding: 50px;
     margin: 5px;
     border-radius: 10px;
 
 }
-.infographic-left{
+
+.infographic-left {
     width: 30vw;
     align-items: flex-start;
-    
-    
+
+
 }
 
-.infographic-right{
+.infographic-right {
     width: 50vw;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
 }
 
-.milestone-title-number{
+.milestone-title-number {
     font-size: 76px;
     font-weight: 700;
 }
 
-.milestone-title{
+.milestone-title {
     font-size: 24px;
     font-weight: 700;
     padding-bottom: 10px;
 }
 
-.milestone-description{
+.milestone-description {
     font-size: 16px;
     font-weight: 300;
+}
+
+/* MileStone Section end */
+
+.programs {
+    background-color: var(--yellow-se);
+}
+
+.programs .title-name {
+    background-color: #363738;
+    color: white;
+    padding: 10px 15px;
+}
+
+.programs .container-content {
+    background-color: #363738;
+    /* padding: 0 20px; */
+    /* width: 100vw; */
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.program-content {
+    color: white;
+    display: flex;
+   
+    flex-wrap: wrap;
+}
+.program-content-left{
+    width: 40vw;
+}
+
+.program-content-right{
+    /* display: flex; */
+    
+    width: 40vw;
+    /* height: 40vh; */
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+.program-buttons{
+    display: flex;
+    align-items: flex-end;
+    height: 40vh;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+.program-content-right img{
+    width:40vw;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.program-content .main-title {
+    display: flex;
+    width: 80vw;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.program-content .title-name span {
+    font-size: 18px;
+    color: #ffc635;
+}
+
+.program-content .arrow {
+    border-top-color: #ffc635;
+    border-left-color: #ffc635;
+
+}
+
+.program-content p {
+    font-weight: 300;
+    font-size: 14px;
+
 }
 
 
@@ -563,19 +657,54 @@ body {
 
 
 
+.tab-buttons {
+    display: flex;
+    background-color: #ffc635;
+}
+
+.tablink {
+    padding: 15px;
+    margin-right: 0px;
+    background-color: #ffc635;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: 700;
+    font-size: 22px;
 
 
 
 
+}
+
+.tablink-active {
+    background-color: #363738;
+    color: #ffc635;
+
+}
+
+.container-content .program-content {
+    margin: 20px;
+}
+
+
+.hide-content {
+    display: none;
+}
 
 
 
+.btn-date-course,.btn-more{
+    background-color: black;
+    padding: 15px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
 
+.btn-more {
+   color: #ffc635;
+    /* padding: 15px 20px; */
 
-
-
-
-
+}
 
 
 /* Media Queries */
