@@ -16,25 +16,57 @@ hamburger_close_button.onclick = function(){
 }   
 
 
+// function showContent(evt, program_name) {
+//     let i, program, tablinks;
+//     program = document.getElementsByClassName("program-content");
+//     for (i = 0; i < program.length; i++) {
+//       program[i].style.display = "none";
+   
+//     }
+//     tablinks = document.getElementsByClassName("tablink");
+//     for (i = 0; i < program.length; i++) {
+//       tablinks[i].className = tablinks[i].className.replace(" tablink-active", "");
+//     }
+//     document.getElementById(program_name).style.display = "block";
+//     evt.currentTarget.className += " tablink-active";
+//   }
+
 function showContent(evt, program_name) {
     let i, program, tablinks;
     program = document.getElementsByClassName("program-content");
     for (i = 0; i < program.length; i++) {
-      program[i].style.display = "none";
-   
+        program[i].style.display = "none";
     }
+
     tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < program.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" tablink-active", "");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("tablink-active");
     }
+
     document.getElementById(program_name).style.display = "block";
-    evt.currentTarget.className += " tablink-active";
-  }
+    evt.currentTarget.classList.add("tablink-active");
 
-// document.getElementById("FCS").addEventListener('click', function (){
-//     // document.getElementsByClassName("program-content")[0].classList.toggle('hide-content')
-//     document.getElementsByClassName("program-content")[0].setAttribute('class', 'hide-ul')
-//     tasks_list_ongoing.setAttribute('class', 'hide-ul')
-//     tasks_list_finished.removeAttribute('class', 'hide-ul')
+    const program_container = document.querySelector(".programs");
+    const tab_buttons =document.querySelector(".tab-buttons") 
+    // const tablink = document.querySelector(".tablink-active ");
+    program_container.style.backgroundColor = getBackgroundColor(program_name);
+    tab_buttons.style.backgroundColor = getBackgroundColor(program_name);
+    // tablink.style.backgroundColor = getBackgroundColor(program_name);
 
-// } )
+
+}
+
+function getBackgroundColor(program_name) {
+    switch (program_name) {
+        case "FCS":
+            return "#ffc635";
+        case "FSW":
+            return "#28eea7";
+        case "UIX":
+            return "#fb508e";
+        case "FSD":
+            return "#9864da";
+        default:
+            return "#ffc635";
+    }
+}

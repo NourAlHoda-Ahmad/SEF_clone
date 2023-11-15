@@ -574,6 +574,9 @@ section {
 
 /* MileStone Section end */
 
+
+/* Programs Section start */
+
 .programs {
     background-color: var(--yellow-se);
 }
@@ -654,9 +657,6 @@ section {
 
 
 
-
-
-
 .tab-buttons {
     display: flex;
     background-color: #ffc635;
@@ -665,7 +665,7 @@ section {
 .tablink {
     padding: 15px;
     margin-right: 0px;
-    background-color: #ffc635;
+    background-color:transparent;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     font-weight: 700;
@@ -694,7 +694,7 @@ section {
 
 
 .btn-date-course,.btn-more{
-    background-color:#363738;
+    background-color:black  ;
     padding: 15px 20px;
     margin: 5px;
     cursor: pointer;
@@ -706,10 +706,11 @@ section {
 
 }
 
+/* Programs Section end */
 
 
 
-/* Hire talents */
+/* Hire talents  start*/
 .hire-talents{
     background-color: #363738;
     color: white;
@@ -722,14 +723,6 @@ section {
     flex-direction: column;
     
 }
-
-/* .container-content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-
-} */
-
 
 .hire-talents .btn-more{
     color: white;
@@ -768,6 +761,28 @@ section {
 .hr-hire img{
 height: 50px;
 }
+
+/* Hire talents  end*/
+
+
+.partners{
+    background-color: none;
+}
+
+.container-partners{
+    width: 90vw;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partners img{
+    width: 200px;
+    height: 100px;
+}
+
+
 
 /* Media Queries */
 @media only screen and (max-width: 800px) {
