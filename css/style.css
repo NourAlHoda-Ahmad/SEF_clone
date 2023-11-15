@@ -728,6 +728,7 @@ section {
     color: white;
     text-align: end;
     margin-top: 20px;
+    background-color: #363738;;
 }
 
 
@@ -764,7 +765,7 @@ height: 50px;
 
 /* Hire talents  end*/
 
-
+/* Partners start */
 .partners{
     background-color: none;
 }
@@ -781,6 +782,71 @@ height: 50px;
     width: 200px;
     height: 100px;
 }
+/* Partners end */
+
+
+.subscribe{
+    background-color: #363738;
+    color: white;
+}
+
+.subscribe .container{
+    display: flex;
+    justify-content: space-between;
+gap: 20px;
+   
+}
+
+.subscribe-left{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.subscribe span{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+.subscribe input{
+    padding: 15px;
+}
+
+.subscribe-right{
+    display: flex;
+}
+
+.btn-subscribe {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    /* margin: 20px 10px; */
+    cursor: pointer;
+    background-color: black;
+
+}
+
+span.main-color{
+    color: #28eea7;
+    font-weight: 700;
+    font-size: 24px;
+
+    
+}
+
+.hire-talents span.main-color{
+ 
+    font-size: 16px;
+
+    
+}
+
+
+
+
+
 
 
 
