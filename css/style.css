@@ -30,7 +30,7 @@ img {
 .page {
     overflow-x: hidden;
     overflow-y: hidden;
-  
+
 
 }
 
@@ -143,16 +143,17 @@ body {
 
 }
 
-.navbar-nav-box .logo img{
+.navbar-nav-box .logo img {
     height: auto;
 }
 
 
-.navbar-body{
+.navbar-body {
     display: flex;
 }
 
-.navbar-body-left ,.navbar-body-right{
+.navbar-body-left,
+.navbar-body-right {
     width: 50vw;
     margin-bottom: 50px;
     margin-left: 100px;
@@ -160,7 +161,7 @@ body {
     /* align-items: flex-start; */
 }
 
-.navbar-body-left  ul li {
+.navbar-body-left ul li {
     list-style: none;
     margin: 20px;
     margin-left: 120px;
@@ -184,41 +185,86 @@ body {
     color: white;
 }
 
-.navbar-body-right{
+.navbar-body-right {
     flex-direction: column;
-/* margin: 100px; */
+
 
 }
 
 
-.box-account,.box-hr{
-  /* width: fit-content; */
-  background-color: #363738;
-width: 500px;
-
-
-border-radius: 15px;
+.box-account,
+.box-hr {
+    /* width: fit-content; */
+    background-color: #363738;
+    width: 500px;
+    margin: 20px 0px;
+    border-radius: 15px;
 
 
 }
 
 
 .box-account .main-title {
-color: white;
-padding: 20px;
-width: fit-content;
-margin-bottom  : 0px;
+    color: white;
+    padding: 20px;
+    width: fit-content;
+    margin-bottom: 0px;
 
 }
 
-.box-account .desc{
+.box-account .box-account-note {
     padding: 20px;
     color: var(--grey-se);
     font-size: 12px;
 }
 
 
+.registration-buttons {
+    /* margin:70px 0px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px 30px 0px;
+}
 
+.btn-reg {
+    background-color: white;
+    padding: 15px 200px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn-reg.login-btn {
+    background-color: #28eea7;
+    padding: 15px 205px;
+
+}
+
+.box-hr{
+    background-color: #31b7f0;
+    cursor: pointer;
+    display: flex;
+}
+.hr-box-logo{
+    width: 152px;
+    height: 120px;
+    padding: 20px;
+}
+
+.hr-box-description{
+    padding: 20px 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.hr-box-description-down{
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 10px;
+}
 .hero-left,
 .hero-right {
     width: 50vw;
