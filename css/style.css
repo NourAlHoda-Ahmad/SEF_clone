@@ -1066,13 +1066,31 @@ footer img {
     }
 
 
-    .navbar-body-right{
+    .navbar-body-right,
+    .contact-us-left,
+    .footer-right,
+    .testimonials-right{
         display: none;
     }
 
-    /* .nav-box{
-        align-items:flex-end;
-    } */
+    .testimonials-left{
+        width: 80vw;
+        margin: 10px;
+    }
+
+    .testimonials-left span{
+      font-size: 16px;
+    }
+    .contact-us-right{
+        width: 90vw;
+    }
+
+   
+
+    .nav-box{
+        align-items: unset;
+        justify-content: unset;
+    }
 
     .main-title {
         display: flex;
