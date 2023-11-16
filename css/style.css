@@ -464,7 +464,7 @@ section {
 }
 
 .infographic-card {
-    background-color: var(--light-grey);
+    background-color: #f1f2f3;
     padding: 50px;
     margin: 5px;
     border-radius: 10px;
@@ -527,15 +527,16 @@ section {
 }
 
 
-.program-content-left,
-.program-content-right {
-    width: 40vw;
+.program-content-left{
+    width: 50vw;
+
 }
 
 .program-content-right {
-
+    width: 30vw;
     display: flex;
     justify-content: flex-end;
+
 
 }
 
@@ -549,9 +550,10 @@ section {
 }
 
 .program-content-right img {
-    width: 30vw;
-    border-radius: 55px;
-    padding: 15px;
+    width: 90%;
+    border-radius: 40px;
+    object-fit: cover;
+
 }
 
 .program-content .main-title {
@@ -564,15 +566,10 @@ section {
 }
 
 .program-content .title-name span {
-    font-size: 18px;
-    color: #ffc635;
+    font-size: 24px;
+    /* color: #ffc635; */
 }
 
-.program-content .arrow {
-    border-top-color: #ffc635;
-    border-left-color: #ffc635;
-
-}
 
 .program-content p {
     font-weight: 300;
@@ -586,7 +583,7 @@ section {
 }
 
 .tablink {
-    padding: 15px;
+    padding: 15px 35px;
     margin-right: 0px;
     background-color: transparent;
     border-top-left-radius: 15px;
@@ -626,7 +623,18 @@ section {
     text-align: end;
     padding: 15px 15px 15px 50px;
 
+}
 
+#FSD .btn-more {
+    color: var(--purple-se);
+}
+
+#FSW .btn-more {
+    color: #28eea7;
+}
+
+#UIX .btn-more {
+    color: #fb508e;
 }
 
 .btn-contact-us {
@@ -638,6 +646,29 @@ section {
 
 }
 
+span.change-color{
+    color: #28eea7;
+    font-size: 24px;
+}
+
+
+#FCS span.change-color{
+    color: #ffc635;
+}
+
+#FSD span.change-color{
+    color: var(--purple-se);
+    
+}
+
+#UIX span.change-color{
+    color: var(--pink-se);
+    
+}
+
+.program-buttons span{
+    font-size: 16px;
+}
 /* Programs Section end */
 
 
@@ -649,7 +680,7 @@ section {
 }
 
 .hire-talents .container-content {
-    background-color: black;
+    background-color: #232323;
     padding: 20px;
     border-radius: 15px;
     flex-direction: column;
@@ -787,11 +818,13 @@ section {
 
 
 /* Contact us start */
+
 .contact-us {
     background-color: #28eea7;
-    justify-content: center;
 
 }
+
+
 
 .contact-us-left,
 .contact-us-right {
@@ -1067,10 +1100,14 @@ footer img {
 
 
     .navbar-body-right,
-    .contact-us-left,
     .footer-right,
-    .testimonials-right{
+    .testimonials-right,
+    .program-content-right{
         display: none;
+    }
+
+    .program-content-left{
+        width: 80vw;
     }
 
     .testimonials-left{
@@ -1081,11 +1118,23 @@ footer img {
     .testimonials-left span{
       font-size: 16px;
     }
-    .contact-us-right{
+    .contact-us-right,
+    .contact-us-left{
         width: 90vw;
     }
 
-   
+    .contact-us-left iframe{
+        width: 90%;
+        height: 90%;
+    }
+
+    .address{
+        margin-top: 20px;
+    }
+
+    .btn-submit{
+        width: unset;
+    }
 
     .nav-box{
         align-items: unset;

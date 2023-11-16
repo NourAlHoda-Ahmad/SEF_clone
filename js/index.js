@@ -27,17 +27,19 @@ function showContent(evt, program_name) {
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].classList.remove("tablink-active");
+        tablinks[i].style.color = "";
+
     }
 
-    document.getElementById(program_name).style.display = "block";
+    document.getElementById(program_name).style.display = "flex";
     evt.currentTarget.classList.add("tablink-active");
+    evt.currentTarget.style.color = getBackgroundColor(program_name);
+
 
     const program_container = document.querySelector(".programs");
     const tab_buttons = document.querySelector(".tab-buttons")
-    // const tablink = document.querySelector(".tablink-active ");
     program_container.style.backgroundColor = getBackgroundColor(program_name);
     tab_buttons.style.backgroundColor = getBackgroundColor(program_name);
-    // tablink.style.backgroundColor = getBackgroundColor(program_name);
 
 
 }
