@@ -581,7 +581,7 @@ section {
     background-color: var(--yellow-se);
 }
 
-.programs .title-name {
+.programs .title-name , .contact-us .title-name {
     background-color: #363738;
     color: white;
     padding: 10px 15px;
@@ -600,32 +600,30 @@ section {
     display: flex;
    
     flex-wrap: wrap;
+
 }
-.program-content-left{
+.program-content-left,.program-content-right{
     width: 40vw;
 }
 
 .program-content-right{
-    /* display: flex; */
-    
-    width: 40vw;
-    /* height: 40vh; */
-    /* justify-content: center;
-    align-items: center; */
-    
+
+    display: flex;
+    justify-content: flex-end;
+  
 }
 .program-buttons{
     display: flex;
     align-items: flex-end;
-    height: 40vh;
+    height: 30vh;
     justify-content: center;
     margin: 15px;
     padding: 15px;
 }
 
 .program-content-right img{
-    width:40vw;
-    border-radius: 15px;
+    width:30vw;
+    border-radius: 55px;
     padding: 15px;
 }
 
@@ -695,14 +693,26 @@ section {
 
 .btn-date-course,.btn-more{
     background-color:black  ;
-    padding: 15px 20px;
     margin: 5px;
     cursor: pointer;
+    width: fit-content;
+
 }
 
 .btn-more {
    color: #ffc635;
-    /* padding: 15px 20px; */
+   text-align: end;
+   padding: 15px 15px 15px 50px;
+
+
+}
+
+.btn-contact-us{
+    background-color:#363738  ;
+    padding: 15px 50px;
+    margin: 40px 0px;
+    cursor: pointer;
+     text-align: end;
 
 }
 
@@ -784,7 +794,127 @@ height: 50px;
 }
 /* Partners end */
 
+/* Contact us start */
 
+
+.contact-us{
+    background-color: #28eea7;
+    justify-content: center;
+
+}
+
+
+/* .contact-us .container-content{
+    background-color: #31b7f0;
+} */
+
+.contact-us-left, .contact-us-right{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #363738;
+    border-radius: 15px;
+
+    color: white;
+    margin: 5px;
+
+}
+
+.contact-us-left{
+    width: 20vw;
+    justify-content:center;
+    align-items: center;
+
+
+}
+
+.contact-us h3{
+    text-align: start;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 25px 0;
+    font-weight: 700;
+    color: #a5a6a9;
+}
+
+.contact-us-right h3{
+    padding-left: 50px;
+}
+
+.contact-us-left iframe{
+    width: 15vw;
+    height: 18vw;
+    border-radius: 15px;
+   
+
+
+}
+
+.address{
+    text-align: start;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  
+
+}
+.contact-us-right{
+    width: 60vw;
+    /* display: flex;
+    flex-direction: column;
+    background-color: #363738;
+    border-radius: 15px;
+    justify-content:center;
+    align-items: center;
+    color: white; */
+    
+
+
+}
+
+table{
+    display: flex;
+    /* padding: 150px; */
+
+    /* flex-direction: column; */
+      justify-content:center;
+    align-items: center;
+   
+}
+
+td input{
+    padding: 15px;
+    width: 25vw;
+    /* margin-bottom: 55px; */
+    margin: 0px 15px 50px 0px;
+}
+
+label{
+    font-size: 12px;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    
+}
+
+textarea::placeholder {
+    color: #363738;
+    padding: 5px;
+}
+
+.btn-submit{
+    background-color: #28eea7;
+    /* padding: 0px; */
+    width: 15%;
+}
+
+
+
+/* subrscribe starts */
 .subscribe{
     background-color: #363738;
     color: white;
