@@ -1,22 +1,22 @@
 
+//JS For navbar Hamburger
+let nav_box = document.getElementById("nav-box");
+let hamburger_button = document.getElementById("hamburgerButton");
+let hamburger_close_button = document.getElementById("hamburger-close-button");
 
-let nav_box= document.getElementById("nav-box");
-let hamburge_button=document.getElementById("hamburgerButton");
-let hamburger_close_button=document.getElementById("hamburger-close-button");
 
-
-hamburge_button.onclick = function(){
+hamburger_button.onclick = function () {
     nav_box.classList.toggle("open-nav");
 
 }
 
-hamburger_close_button.onclick = function(){
+hamburger_close_button.onclick = function () {
     nav_box.classList.toggle("open-nav");
 
-}   
+}
 
 
-
+//JS For tabs change
 function showContent(evt, program_name) {
     let i, program, tablinks;
     program = document.getElementsByClassName("program-content");
@@ -33,7 +33,7 @@ function showContent(evt, program_name) {
     evt.currentTarget.classList.add("tablink-active");
 
     const program_container = document.querySelector(".programs");
-    const tab_buttons =document.querySelector(".tab-buttons") 
+    const tab_buttons = document.querySelector(".tab-buttons")
     // const tablink = document.querySelector(".tablink-active ");
     program_container.style.backgroundColor = getBackgroundColor(program_name);
     tab_buttons.style.backgroundColor = getBackgroundColor(program_name);
@@ -55,4 +55,80 @@ function getBackgroundColor(program_name) {
         default:
             return "#ffc635";
     }
+}
+
+
+// JS For title animation in hero section
+// important : code from https://codepen.io/icka-dev/pen/gOqxKzR
+
+document.addEventListener('DOMContentLoaded', function () {
+    const sentences = [
+
+        'DATA ENGINEER ?',
+        'UI/UX DESIGNER ?',
+        'SOFTWARE ENGINEER ?',
+        'DATA ENGINEER ?',
+        'SOFTWARE ENGINEER ?'
+
+
+    ];
+
+    let currentIndex = 0;
+    let offset = 0;
+    const sentenceElement = document.querySelector('.title-animated');
+    let forwards = true;
+    let skipCount = 0;
+    const skipDelay = 15;
+    const speed = 95;
+
+    const updateSentence = () => {
+        sentenceElement.textContent = sentences[currentIndex].substring(0, offset);
+    };
+
+    const handleAnimation = () => {
+        if (forwards) {
+            if (offset >= sentences[currentIndex].length) {
+                if (++skipCount === skipDelay) {
+                    forwards = false;
+                    skipCount = 0;
+                }
+            }
+        } else if (offset === 0) {
+            forwards = true;
+            currentIndex = (currentIndex + 1) % sentences.length;
+        }
+
+        if (skipCount === 0) {
+            forwards ? offset++ : offset--;
+        }
+
+        updateSentence();
+    };
+
+    setInterval(handleAnimation, speed);
+});
+
+
+
+//JS For Slider testimonials
+
+let index = 0;
+slider();
+
+function slider() {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    index++;
+
+    if (index > slides.length) {
+        index = 1
+    }
+
+    slides[index - 1].style.display = "flex";
+    setTimeout(slider, 5000); 
 }
