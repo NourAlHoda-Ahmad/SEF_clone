@@ -16,6 +16,24 @@ hamburger_close_button.onclick = function () {
 }
 
 
+//JS For FAQs
+function showParagraph() {
+
+    const questions = document.querySelectorAll('.questions');
+    questions.forEach(question => {
+        question.addEventListener('click', function () {
+
+            const answer = question.querySelector('.answer');
+            answer.classList.toggle('hide-p')
+
+
+        });
+    });
+}
+
+showParagraph()
+
+
 //JS For tabs change
 function showContent(evt, program_name) {
     let i, program, tablinks;
@@ -132,5 +150,5 @@ function slider() {
     }
 
     slides[index - 1].style.display = "flex";
-    setTimeout(slider, 5000); 
+    setTimeout(slider, 5000);
 }

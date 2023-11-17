@@ -53,7 +53,7 @@ section {
 }
 
 .nav-box {
- 
+
     width: 0;
     height: 0;
     background: rgba(0, 0, 0, 0.85);
@@ -64,7 +64,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     overflow-x: hidden;
     border-bottom-left-radius: 100%;
     transition: width 0.5s, height 0.5s, border-radius 0.5s;
@@ -383,7 +383,8 @@ section {
     margin-bottom: 60px;
 }
 
-.title-name,.circles {
+.title-name,
+.circles {
     display: flex;
 }
 
@@ -430,7 +431,7 @@ section {
     width: 100vw;
     height: 100vh;
     display: flex;
-    
+
     overflow-x: hidden;
     margin-bottom: 100px;
 
@@ -471,8 +472,9 @@ section {
 
 }
 
-.infographic-left,.infographic-right {
-    width: 40vw; 
+.infographic-left,
+.infographic-right {
+    width: 40vw;
 }
 
 
@@ -480,7 +482,7 @@ section {
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
-   
+
 }
 
 .milestone-title-number {
@@ -527,7 +529,7 @@ section {
 }
 
 
-.program-content-left{
+.program-content-left {
     width: 50vw;
 
 }
@@ -646,29 +648,30 @@ section {
 
 }
 
-span.change-color{
+span.change-color {
     color: #28eea7;
     font-size: 24px;
 }
 
 
-#FCS span.change-color{
+#FCS span.change-color {
     color: #ffc635;
 }
 
-#FSD span.change-color{
+#FSD span.change-color {
     color: var(--purple-se);
-    
+
 }
 
-#UIX span.change-color{
+#UIX span.change-color {
     color: var(--pink-se);
-    
+
 }
 
-.program-buttons span{
+.program-buttons span {
     font-size: 16px;
 }
+
 /* Programs Section end */
 
 
@@ -692,7 +695,7 @@ span.change-color{
     text-align: end;
     margin-top: 20px;
     background-color: #363738;
-    
+
 }
 
 .hire-talents .container-content .recruitment-subtitle {
@@ -796,24 +799,67 @@ span.change-color{
 }
 
 
-.main-color.name{
+.main-color.name {
     font-size: 18px;
 }
 
-.slide{
+.slide {
     animation: fade 1.5s ease-in-out;
 }
 
 @keyframes fade {
     from {
-      opacity: 0;
-      transform: translateX(500px);
+        opacity: 0;
+        transform: translateX(500px);
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
+
 /* Testimonials end  */
+
+
+/* FAQs start  */
+.faqs {
+    background-color: #363738;
+    color: white;
+}
+
+.questions {
+    padding: 25px;
+    border-radius: 20px;
+    margin: 10px;
+
+}
+
+.questions,.view-all{
+    width: 80vw;
+    background-color: #232323;
+    cursor: pointer;
+
+}
+
+.faqs p {
+    padding-top: 25px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.hide-p{
+    display: none;
+}
+
+.questions ul{
+    padding: 10px 40px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* FAQs end  */
+
+
 
 
 
@@ -932,6 +978,7 @@ textarea::placeholder {
     width: 200px;
     height: 100px;
 }
+
 /* Partners end */
 
 
@@ -1102,41 +1149,42 @@ footer img {
     .navbar-body-right,
     .footer-right,
     .testimonials-right,
-    .program-content-right{
+    .program-content-right {
         display: none;
     }
 
-    .program-content-left{
+    .program-content-left {
         width: 80vw;
     }
 
-    .testimonials-left{
+    .testimonials-left {
         width: 80vw;
         margin: 10px;
     }
 
-    .testimonials-left span{
-      font-size: 16px;
+    .testimonials-left span {
+        font-size: 16px;
     }
+
     .contact-us-right,
-    .contact-us-left{
+    .contact-us-left {
         width: 90vw;
     }
 
-    .contact-us-left iframe{
+    .contact-us-left iframe {
         width: 90%;
         height: 90%;
     }
 
-    .address{
+    .address {
         margin-top: 20px;
     }
 
-    .btn-submit{
+    .btn-submit {
         width: unset;
     }
 
-    .nav-box{
+    .nav-box {
         align-items: unset;
         justify-content: unset;
     }
@@ -1165,7 +1213,8 @@ footer img {
     }
 
 
-    .infographic-left,.infographic-right {
+    .infographic-left,
+    .infographic-right {
         width: 100vw;
         justify-content: center;
     }
