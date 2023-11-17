@@ -1,5 +1,7 @@
 
 //JS For navbar Hamburger
+function openNav(){
+
 let nav_box = document.getElementById("nav-box");
 let hamburger_button = document.getElementById("hamburgerButton");
 let hamburger_close_button = document.getElementById("hamburger-close-button");
@@ -14,7 +16,10 @@ hamburger_close_button.onclick = function () {
     nav_box.classList.toggle("open-nav");
 
 }
+    
+}
 
+openNav()
 
 //JS For FAQs
 function showParagraph() {

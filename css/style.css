@@ -1,6 +1,5 @@
 section {
     padding: 20px 0px;
-    /* width: 100vw; */
 }
 
 .btn {
@@ -50,6 +49,7 @@ section {
     border-radius: 10px;
     padding: 5px;
     cursor: pointer;
+    margin-right: 40px;
 }
 
 .nav-box {
@@ -320,10 +320,6 @@ section {
     background-color: black;
     color: white;
     font-size: 24px;
-    /* width:max-content;
-    padding-right: 0; */
-
-
 }
 
 .hero-right .title-up {
@@ -452,6 +448,7 @@ section {
 
 /* Hello World Section end */
 
+
 /* MileStone Section start */
 .milestones {
     background-color: white;
@@ -569,7 +566,6 @@ section {
 
 .program-content .title-name span {
     font-size: 24px;
-    /* color: #ffc635; */
 }
 
 
@@ -830,8 +826,7 @@ span.change-color {
 .questions {
     padding: 25px;
     border-radius: 20px;
-    margin: 10px;
-
+    margin-bottom: 10px;
 }
 
 .questions,.view-all{
@@ -858,9 +853,6 @@ span.change-color {
 }
 
 /* FAQs end  */
-
-
-
 
 
 /* Contact us start */
@@ -1040,7 +1032,6 @@ span.main-color {
 footer {
     background-color: black;
     padding: 20px 0px;
-    /* width: 100vw; */
     display: flex;
     justify-content: center;
 
@@ -1104,7 +1095,6 @@ footer img {
 .footer-bottom {
     background-color: black;
     padding: 20px 0px;
-    /* width: 100vw; */
     display: flex;
     justify-content: center;
 }
@@ -1144,6 +1134,7 @@ footer img {
         margin-left: 5%;
         margin-right: 0px;
     }
+
 
 
     .navbar-body-right,
@@ -1191,8 +1182,6 @@ footer img {
 
     .main-title {
         display: flex;
-        /* width: 20vw;
-        height: 75px; */
         align-items: center;
         justify-content: space-between;
     }
@@ -1207,9 +1196,6 @@ footer img {
         border-radius: 10px;
         width: 65vw;
         height: 55vw;
-        /* margin-top:0; */
-
-
     }
 
 
@@ -1218,5 +1204,13 @@ footer img {
         width: 100vw;
         justify-content: center;
     }
+
+   .tablink{
+    padding: 15px;
+   }
+
+   .navbar-body-left{
+    margin-left: unset;
+   }
 
 }
